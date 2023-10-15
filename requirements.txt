@@ -1,4 +1,4 @@
-opencv-python=latest
-pdfplumber=latest
-numpy=latest
-pytesseract=latest
+opencv-python~=4.8.1.78
+numpy~=1.26.1
+Pillow~=10.0.1
+pytesseract~=0.3.10
