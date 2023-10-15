@@ -1,0 +1,4 @@
+opencv-python=latest
+pdfplumber=latest
+numpy=latest
+pytesseract=latest

@@ -1,5 +1,4 @@
 import datetime
-import re
 
 
 def is_string(data):

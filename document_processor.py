@@ -1,25 +1,11 @@
-import os
-
 import constants
-import file_util
 import image_converter
 import pdf_to_image
 import tesseract_recognition
 import text_detector
 
-output_folder = "data"
-
 
 def process_document(doc_in):
-    doc_out_folder = output_folder + "/" + doc_in.split("/")[-1].split(".")[0]
-
-    try:
-        os.mkdir(doc_out_folder)
-    except FileExistsError:
-        pass
-
-    file_util.delete_files_in_folder(doc_out_folder)
-
     page_images_pdf = pdf_to_image.read(doc_in)
     extracted_data = []
 
